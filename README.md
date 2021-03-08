@@ -31,3 +31,5 @@ git clone -- git@github.com:[your-user-name]/webpack-express.git --
 # Done with setup of the project & installing webpack
 
 # Webpack Entry (Done)
+
+# Output & Loaders (Done)
