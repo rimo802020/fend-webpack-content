@@ -1,7 +1,9 @@
 const path = require("path")
 const webpack = require("webpack")
 const HtmlWebPackPlugin = require("html-webpack-plugin")
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {
+  CleanWebpackPlugin
+} = require('clean-webpack-plugin');
 
 
 module.exports = {
@@ -28,11 +30,14 @@ module.exports = {
       // Automatically remove all unused webpack assets on rebuild
       cleanStaleWebpackAssets: true,
       protectWebpackAssets: false
-})
+    })
   ],
-  devServer: {
+  /* devServer: {
     port: 1234,
     contentBase: path.resolve(__dirname, "dist"),
     open: true
-  }
+  } 
+  
+  put in package.json npm scipt:
+  // "build-dev": "webpack  --config webpack.dev.js --watch"*/
 }
